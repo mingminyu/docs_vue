@@ -143,4 +143,5 @@ markdown_extensions:
 nav:
   - 教程:
     - index.md
+    - 快速入门: quickstart.md
     
