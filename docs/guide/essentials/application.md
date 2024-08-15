@@ -16,7 +16,6 @@ const app = createApp({
 
 我们传入 `createApp` 的对象实际上是一个组件，每个应用都需要一个“根组件”，其他组件将作为其子组件。如果你使用的是单文件组件，我们可以直接从另一个文件中导入根组件。
 
-
 ```ts linenums="1"
 import { createApp } from 'vue'
 // 从一个单文件组件中导入根组件
@@ -48,6 +47,7 @@ App (root component)
 <div id="app"></div>
 ```
 
+在 Vue 中挂载对应的 DOM 元素：
 
 ```js  title="Javascript"
 app.mount('#app')
@@ -87,7 +87,6 @@ DOM 内模板通常用于[无构建步骤](https://cn.vuejs.org/guide/quick-star
 
 应用实例会暴露一个 `.config` 对象允许我们配置一些应用级的选项，例如定义一个应用级的错误处理器，用来捕获所有子组件上的错误：
 
-js
 
 ```js
 app.config.errorHandler = (err) => {
